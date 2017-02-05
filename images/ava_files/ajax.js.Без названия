@@ -1,0 +1,1 @@
+define(["underscore"],function(e){return{parseAllResponseHeaders:function(n){var r={},s=n.getAllResponseHeaders().split("\r\n");return s.pop(),e.each(s,function(e){if(e=e.trim()){var n=e.indexOf(": "),s=e.slice(0,n);r[s]=e.slice(n+2)}}),r}}});

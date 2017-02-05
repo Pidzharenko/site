@@ -1,0 +1,1 @@
+define(["jquery","./config","../../utils","./read"],function(e,t,n,r){"use strict";return function(e,u){var i=t.url;return e&&(i+="/"+e,u&&(i+="/"+u)),n.ajax(n.settings(i+"?recursive=true","DELETE",{"If-Match":"*"})).then(function(){r.wipe(e,u)})}});
